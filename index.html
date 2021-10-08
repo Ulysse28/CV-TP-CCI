@@ -7,21 +7,25 @@
     <title>CV Ulysse Valdenaire</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <ul class="flex">
-                <li><a href="#profil">Profil</a></li>
-                <li><a href="#formations">Formations</a></li>
-                <li><a href="#experiences">Expériences</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#qualite">Qualités</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1 class="name" id="profil">Ulysse Valdenaire</h1>
-        <h2>Objectif : Développeur Web</h2>
+    <header class="nav-menu">
+        <label for="nav-toggle" class="nav-toggle-label"></label>
     </header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <ul id="menu-topo">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="hide">•</li>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="hide">•</li>
+        <li class="nav-item"><a href="#">Partners</a></li>
+        <li class="hide">•</li>
+        <li class="nav-item"><a href="#">Store</a></li>
+    </ul>
+
+    <div class="title">   <h1 class="name" id="profil">Ulysse Valdenaire</h1>
+    <h2>Objectif : Développeur Web</h2></div>
+ 
     <section class="profil">
         <h3> Mon profil</h3>
         <p>Etant passionné d'informatique, je me suis formé en autodidacte à la création de page web et au développement
@@ -31,27 +35,32 @@
             à la CCI du Cher. Je recherche un stage de deux mois pour mettre en pratique mes compétences.</p>
         <p>Je vous invite à consulter mon portofolio ou mon compte LinkedIn et mon compte GitHub pour rendre compte de
             mes compétences.</p>
+        <div class="flex logo">
+            <img src="images/github.png">
+            <a href="#">Mon portofolio</a>
+            <img src="images/linkedin.png">
+        </div>
     </section>
     <hr>
-    <section class="flex">
+    <section class="flex2">
         <div class="bloc" id="formations">
             <h3>Formations</h3>
             <ul>
-                <li>Formation professionnelle (Avril-Juillet 2021) :</li><br>
+                <li>Formation professionnelle (Avril-Juillet 2021) :</li>
                 <ul>
-                    <li>Préparation aux métiers du numérique (CCI du Cher)</li><br>
+                    <li>Préparation aux métiers du numérique (CCI du Cher)</li>
                 </ul>
-                <li>Certificats en ligne sur OpenClassrooms : (2021)</li><br>
+                <li>Certificats en ligne sur OpenClassrooms : (2021)</li>
                 <ul>
-                    <li>Apprenez à créer votre site web avec HTML5 et CSS3</li><br>
-                    <li>Créez des sites web responsive avec Bootstrap 4</li><br>
-                    <li>Apprenez à programmer avec JavaScript</li><br>
-                    <li>Ecrivez du JavaScript pour le web</li><br>
-                    <li>Débutez avec React</li><br>
-                    <li>Concevez votre site web avec PHP et MySQL</li><br>
+                    <li>Apprenez à créer votre site web avec HTML5 et CSS3</li>
+                    <li>Créez des sites web responsive avec Bootstrap 4</li>
+                    <li>Apprenez à programmer avec JavaScript</li>
+                    <li>Ecrivez du JavaScript pour le web</li>
+                    <li>Débutez avec React</li>
+                    <li>Concevez votre site web avec PHP et MySQL</li>
                     <li>Adoptez une architecture MVC en PHP</li>
                 </ul>
-                <br><br>
+                
             </ul>
         </div>
         <div class="bloc" id="experience">
@@ -65,6 +74,45 @@
         </div>
     </section>
     <hr>
+    <section class="flex3">
+        <div>
+            <h3>Langages informatiques</h3>
+            <ul>
+                <li>HTML/CSS (intermédiaire) </li>
+                <li>JavaScript (intermédiaire)</li>
+                <li>Python (intermédiaire)</li>
+                <li>PHP (débutant)</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Qualités</h3>
+            <ul>
+                <li>Capacité d'adaptation</li>
+                <li>Autonomie</li>
+                <li>Perséverance</li>
+                <li>Envie d'apprendre</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <form>
+            <input type="text" name="prenom" placeholder="Votre prénom">
+            <input type="text" name="nom" placeholder="Votre nom">
+            <input type="main" name="mail" placeholder="Votre email">
+            <textarea name="message"></textarea>
+            <div class="wrapper">
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="flex-center">
+            <img src="images/github.png">
+            <img src="images/linkedin.png">
+        </div>
+        <p class="textCopyright">© Copyright Ulysse Valdenaire, Tous droits réservés
+        </p>
+    </footer>
 </body>
 
 </html>

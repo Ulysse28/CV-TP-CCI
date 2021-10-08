@@ -1,17 +1,126 @@
 body {
+  min-width: 320px;
+  margin: 3% 0 3% 0;
+  padding: 0;
+  background-color: #f3e8e5;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  color: #846d63;
+  height:200vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+ul#menu-topo {
+  margin: 0 auto;
+  padding: 10px 0;
+  list-style-type: none;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  position: fixed;
+ 
+  background-color: #c48254;
+  width:100%;
+  top:0;
+ 
+}
+
+ul#menu-topo li {
+  display: inline;
   margin: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+ul#menu-topo li a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 4px 10px;
+  text-decoration: none;
 }
 
-header {
-  background: rgb(43, 43, 141);
-  height: 20vh;
+.nav-toggle {
+  display: none;
 }
+
+.title{
+  margin-top:50px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0;
+  }
+
+  .nav-menu {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    background-color: #b95a16;
+    table-layout: fixed;
+    position:fixed;
+    top:0;
+  }
+  ul#menu-topo {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    table-layout: fixed;
+    transition: all .3s ease-in;
+    position:static;
+  }
+  ul#menu-topo li {
+    display: block;
+    border-bottom: 1px solid #9a6760;
+    line-height: 3;
+    color: white;
+  }
+  #menu-topo li a {
+    color: white;
+  }
+  ul#menu-topo li.hide {
+    display: none !important;
+  }
+  #menu-topo li:hover {
+    border-bottom: 1px solid #c77336;
+    background-color: #c76926;
+  }
+  /****TOGGLE****/
+  .nav-toggle-label:before {
+    color: white;
+
+    content: '☰';
+  }
+  .nav-toggle:checked + ul#menu-topo {
+    display: table;
+    margin-left: 0;
+  }
+}
+
+
+
 
 .flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height:50vh;
+}
+
+.flex2{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+.flex3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -36,16 +145,12 @@ nav ul li {
   list-style-type: none;
 }
 
-a {
+ li a {
   text-decoration: none;
   color: rgb(240, 238, 238);
 }
+xfg
 
-h1,
-h2 {
-  text-align: center;
-  color: rgb(240, 238, 238);
-}
 
 .name {
   margin-top: 60px;
@@ -55,7 +160,7 @@ section {
   width: 80vw;
   margin: 20px auto;
 }
-
+ 
 h3 {
   text-align: center;
 }
@@ -66,10 +171,84 @@ p {
 }
 
 .profil {
-  height: 70vh;
+  /* height: 150vh; */
 }
 
 .bloc {
   width: 100%;
-  height: 80vh;
+
+}
+
+.logo{
+  height:150px;
+}
+
+
+input, textarea{
+  display: block;
+
+  width:70%;
+  margin:10px auto;
+}
+
+button{
+  margin:auto;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center img{
+  margin:10px;
+  width:3%;
+}
+
+footer{
+  background: rgb(43, 43, 141);
+  color:white;
+}
+
+.textCopyright{
+  text-align: center;
+  margin:0;
+}
+
+
+@media screen and (max-width:900px) {
+
+  .flex{
+    display: flex;
+    flex-direction: column;
+  height: 50vh;
+
+  }
+
+  .flex2 {
+    display: block;
+  }
+
+  .flex3{
+    display: block;
+  }
+
+  .flex3 div ul{
+    width:70%;
+    margin:auto;
+  }
+}
+
+h1, h2{
+  text-align: center;
+}
+
+
+li{
+  margin-bottom:20px;
 }
