@@ -1,29 +1,49 @@
+/*CSS FILE*/
+
+/*************************************** GENERAL ***************************************/
+
 body {
-  min-width: 320px;
   margin: 3% 0 3% 0;
   padding: 0;
   background-color: #f3e8e5;
   font-family: "Lato", sans-serif;
-  font-size: 1em;
   color: #636884;
-  height: 200vh;
+  margin: 0;
 }
-color: #846d63;
-a {
-  text-decoration: none;
-  color: white;
+
+h1,
+h2 {
+  text-align: center;
 }
+
+li {
+  margin-bottom: 20px;
+}
+
+section {
+  width: 80vw;
+  margin: 20px auto;
+}
+
+h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+p {
+  text-align: justify;
+  line-height: 25px;
+}
+
+/*************************************** HEADER NAV ***************************************/
 
 ul#menu-topo {
   margin: 0 auto;
   padding: 10px 0;
   list-style-type: none;
-  font-size: 1em;
   text-align: center;
   text-transform: uppercase;
-  position: fixed;
-  
-  background: #016ABC;
+  background: #016abc;
   width: 100%;
   top: 0;
 }
@@ -39,18 +59,157 @@ ul#menu-topo li a {
   margin-left: 10px;
   padding: 4px 10px;
   text-decoration: none;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li,
+.flex3 ul li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(240, 238, 238);
 }
 
 .nav-toggle {
   display: none;
 }
 
+/**************** SECTION TITLE ****************/
+
 .title {
   margin-top: 80px;
 }
+.name {
+  margin-top: 60px;
+}
+
+/*************************************** SECTION PROFIL ***************************************/
+
+.logo {
+  height: 150px;
+}
+
+.link {
+  font-size: 25px;
+  color: #636884;
+  cursor: pointer;
+  transition-duration: 1000ms;
+}
+
+.link:hover {
+  transform: scale(1.3);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+
+/*************************************** SECTION FORMATIONS EXPERIENCES ***************************************/
+
+.flex2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bloc {
+  width: 100%;
+}
+
+/*************************************** SECTION PROJETS ***************************************/
+
 .projects {
   margin: 10px 10px;
   width: 45%;
+}
+
+/*************************************** SECTION COMPETENCES ***************************************/
+
+.flex3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/************* SECTION LANGAGES INFORMATIQUES ****************/
+
+.tryFlex {
+  display: flex;
+}
+
+.listCode {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listCode li {
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  height: 35px;
+  padding-left: 40px;
+}
+
+.elementPhp {
+  background-image: url("images/php.png");
+}
+
+.elementPython {
+  background-image: url("images/python.png");
+}
+
+.elementJS {
+  background-image: url("images/js.png");
+}
+
+.elementHTML {
+  background-image: url("images/html.png");
+}
+
+.listProgress {
+  padding-left: 0;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.listProgress li {
+  margin-bottom: 25px;
+  margin-right: 15px;
+  height: 35px;
+}
+
+progress {
+  width: 100px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.progress-bar {
+  width: 100px;
+  height: 18px;
+  background: #016abc;
+  border-radius: 16px;
+  display: block;
+  margin-left: 30px;
+}
+
+.progress-bar:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 18px;
+  border-radius: 12px;
+}
+
+.blue:before {
+  background: #b9dfff;
 }
 
 .listQualités,
@@ -63,7 +222,88 @@ ul#menu-topo li a {
   padding: 0;
 }
 
-@media screen and (max-width: 800px) {
+/*************************************** SECTION FORMULAIRE ***************************************/
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.submitBtn {
+  background: #b9dfff;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+  height: 40px;
+  width: 100px;
+}
+
+.submitBtn:hover {
+  background: #016abc;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+}
+
+.resetBtn:hover {
+  background-color: red;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center img {
+  margin: 10px;
+  width: 3%;
+}
+
+footer {
+  background: #016abc;
+  color: white;
+}
+
+.textCopyright {
+  text-align: center;
+  margin: 0;
+}
+
+input,
+textarea {
+  display: block;
+  width: 70%;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  font-family: "Lato", sans-serif;
+}
+
+input {
+  height: 30px;
+}
+
+input:focus {
+  border: none;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button {
+  margin: auto;
+}
+
+/*************************************** RESPONSIVE DESIGN ***************************************/
+
+@media screen and (max-width: 900px) {
   body {
     margin: 0;
   }
@@ -105,10 +345,9 @@ ul#menu-topo li a {
 
   #menu-topo li:hover {
     border-bottom: 1px solid #c77336;
-    background: #B9DFFF;
+    background: #b9dfff;
   }
 
-  /****TOGGLE****/
   .nav-toggle-label:before {
     color: white;
     content: "☰";
@@ -128,244 +367,14 @@ ul#menu-topo li a {
     margin: 20px auto;
     width: 80%;
   }
-}
 
-.link {
-  font-size: 25px;
-  color: #636884;
-  cursor: pointer;
-  /* transition-property: transform; */
-  transition-duration: 1000ms;
-}
-
-.link:hover {
-  transform: scale(1.3);
-}
-
-progress {
-  width: 100px;
-  /* padding:2px; */
-  background-color: white;
-  border: 1px solid black;
-  /* text-align:center */
-}
-
-.progress-bar {
-  width: 100px;
-  height: 18px;
-  background: #016ABC;
-  border-radius: 16px;
-  display: block;
-  margin-left: 30px;
-}
-
-.progress-bar:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 18px;
-  border-radius: 12px;
-}
-
-.blue:before {
-  background: #B9DFFF;
-}
-
-.tryFlex {
-  display: flex;
-}
-
-.listProgress {
-  padding-left: 0;
-  margin-right: 10px;
-  margin-top:0;
-  margin-bottom:0;
-
-}
-
-.listProgress li {
-  /* margin-top:25px; */
-  margin-bottom: 25px;
-  margin-right: 15px;
-  height:35px;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 50vh;
-}
-
-.flex2 {
-  display: flex;
-  justify-content: space-around;
-}
-
-.flex3 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-nav ul {
-  padding: 0;
-  margin: 0;
-  height: 10vh;
-}
-
-.navbar {
-  overflow: hidden;
-  background: rgb(43, 43, 141);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 10vh;
-}
-
-nav ul li,
-.flex3 ul li {
-  list-style-type: none;
-}
-
-li a {
-  text-decoration: none;
-  color: rgb(240, 238, 238);
-}
- .name {
-  margin-top: 60px;
-}
-
-section {
-  width: 80vw;
-  margin: 20px auto;
-}
-
-h3 {
-  text-align: center;
-  text-decoration: underline;
-}
-
-p {
-  text-align: justify;
-  line-height: 25px;
-}
-
-.bloc {
-  width: 100%;
-}
-
-.logo {
-  height: 150px;
-}
-
-input,
-textarea {
-  display: block;
-  width: 70%;
-  margin: 20px auto;
-  padding:10px;
-  border:none;
-  border-radius: 25px;
-  font-family: "Lato", sans-serif;
-}
-
-input{
-  height:30px;
-}
-
-input:focus {
-  border: none;
-}
-
-
-
-textarea{
-  height:100px;
-  resize: none;
-}
-
-button {
-  margin: auto;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-}
-
-.flex-center img {
-  margin: 10px;
-  width: 3%;
-}
-
-footer {
- 
-  background: #016ABC;
-  color: white;
-}
-
-.textCopyright {
-  text-align: center;
-  margin: 0;
-}
-
-
-.listCode{
-
-
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-
-}
-
-.listCode li{
- 
-  background-repeat: no-repeat;
- background-position: 0% 0%;
-  height:35px;
-  padding-left:40px;
-
-}
-
-.elementPhp{
-  background-image: url('images/php.png');
-}
-
-
-.elementPython{
-  background-image: url('images/python.png');
-}
-
-.elementJS{
-  background-image: url('images/js.png');
- 
-
-}
-
-.elementHTML{
-  background-image: url('images/html.png');
-}
-
-@media screen and (max-width: 900px) {
   .flex {
     display: flex;
     flex-direction: column;
     height: 50vh;
   }
 
-  .flex2 {
-    display: block;
-  }
-
-  .flex3 {
+  .flex2, .flex3 {
     display: block;
   }
 
@@ -375,65 +384,14 @@ footer {
   }
 
   .listProgress li {
-    margin-top:25px;
+    margin-top: 25px;
     margin-bottom: 25px;
     margin-right: 15px;
-    height:35px;
+    height: 35px;
   }
 
-  input, textarea{
+  input,
+  textarea {
     width: 90%;
   }
-}
-
-h1,
-h2 {
-  text-align: center;
-}
-
-li {
-  margin-bottom: 20px;
-}
-
-.submitBtn{
-  background: #B9DFFF;
-
-color: #fff;
-
-border: 1px solid #eee;
-
-border-radius: 20px;
-
-box-shadow: 5px 5px 5px #eee;
-
-text-shadow:none;
-height:40px;
-width:100px;
-}
-
-.submitBtn:hover{
- 
-
-  background: #016ABC;
-    
-    color: #fff;
-    
-    border: 1px solid #eee;
-    
-    border-radius: 20px;
-    
-    box-shadow: 5px 5px 5px #eee;
-    
-    text-shadow:none;
-}
-
-
-.resetBtn{
-
- 
-
-}
-
-.resetBtn:hover{
-  background-color: red;
 }
