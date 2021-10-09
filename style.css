@@ -22,12 +22,13 @@ li {
 
 section {
   width: 80vw;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 h3 {
   text-align: center;
   text-decoration: underline;
+  margin-top: 20px;
 }
 
 p {
@@ -43,7 +44,7 @@ ul#menu-topo {
   list-style-type: none;
   text-align: center;
   text-transform: uppercase;
-  background: #016abc;
+  background: rgb(43, 43, 141);
   width: 100%;
   top: 0;
 }
@@ -53,6 +54,11 @@ ul#menu-topo li {
   margin: 0;
 }
 
+.hover:hover {
+  background: #b9dfff;
+  padding: 10px;
+  border-radius: 10px;
+}
 ul#menu-topo li a {
   display: inline-block;
   margin-right: 10px;
@@ -80,10 +86,12 @@ li a {
 /**************** SECTION TITLE ****************/
 
 .title {
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 .name {
-  margin-top: 60px;
+  font-size: 50px;
+  margin-bottom: 0;
 }
 
 /*************************************** SECTION PROFIL ***************************************/
@@ -123,6 +131,11 @@ li a {
 
 /*************************************** SECTION PROJETS ***************************************/
 
+.divProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .projects {
   margin: 10px 10px;
   width: 45%;
@@ -140,6 +153,7 @@ li a {
 
 .tryFlex {
   display: flex;
+  margin: auto;
 }
 
 .listCode {
@@ -241,7 +255,7 @@ progress {
 }
 
 .submitBtn:hover {
-  background: #016abc;
+  background: rgb(43, 43, 141);
   color: #fff;
   border: 1px solid #eee;
   border-radius: 20px;
@@ -259,13 +273,8 @@ progress {
 }
 
 .flex-center img {
-  margin: 10px;
-  width: 3%;
-}
-
-footer {
-  background: #016abc;
-  color: white;
+  margin: 10px 50px;
+  width: 30%;
 }
 
 .textCopyright {
@@ -301,6 +310,12 @@ button {
   margin: auto;
 }
 
+footer {
+  background: rgb(43, 43, 141);
+  color: white;
+  padding: 10px;
+}
+
 /*************************************** RESPONSIVE DESIGN ***************************************/
 
 @media screen and (max-width: 900px) {
@@ -330,7 +345,7 @@ button {
 
   ul#menu-topo li {
     display: block;
-    border-bottom: 1px solid #9a6760;
+    border-bottom: 1px solid#f3e8e5;
     line-height: 3;
     color: white;
   }
@@ -374,7 +389,8 @@ button {
     height: 50vh;
   }
 
-  .flex2, .flex3 {
+  .flex2,
+  .flex3 {
     display: block;
   }
 
@@ -390,8 +406,20 @@ button {
     height: 35px;
   }
 
+  .listProgress li div {
+    margin-left: 100px;
+  }
+
   input,
   textarea {
     width: 90%;
+  }
+
+  .flex-center img {
+    width: 30%;
+  }
+
+  .submitBtn {
+    background-color: #016abc;
   }
 }

@@ -15,17 +15,17 @@
     </header>
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <ul id="menu-topo">
-        <li class="nav-item"><a href="#">Profil</a></li>
+        <li class="nav-item hover"><a href="#profil">Profil</a></li>
         <li class="hide">•</li>
-        <li class="nav-item"><a href="#">Formations</a></li>
+        <li class="nav-item hover"><a href="#formations">Formations</a></li>
         <li class="hide">•</li>
-        <li class="nav-item"><a href="#">Expériences</a></li>
+        <li class="nav-item hover"><a href="#experiences">Expériences</a></li>
         <li class="hide">•</li>
-        <li class="nav-item"><a href="#">Compétences informatiques</a></li>
+        <li class="nav-item hover"><a href="#info">Compétences informatiques</a></li>
         <li class="hide">•</li>
-        <li class="nav-item"><a href="#">Qualités</a></li>
+        <li class="nav-item hover"><a href="#qualities">Qualités</a></li>
         <li class="hide">•</li>
-        <li class="nav-item"><a href="#">Contact</a></li>
+        <li class="nav-item hover"><a href="#contact">Contact</a></li>
     </ul>
     <div class="title">
         <h1 class="name" id="profil">Ulysse Valdenaire</h1>
@@ -49,7 +49,7 @@
     </section>
     <hr>
     <!----------------------------------------- SECTION FORMATIONS EXPERIENCES ----------------------------------------->
-    <section class="flex2">
+    <section class="flex2" id="formations">
         <div class="bloc" id="formations">
             <h3>Formations</h3>
             <h4>Formation professionnelle (Avril-Juillet 2021) :</h4>
@@ -68,7 +68,7 @@
                 <li>Adoptez une architecture MVC en PHP</li>
             </ul>
         </div>
-        <div class="bloc" id="experience">
+        <div class="bloc" id="experiences">
             <h3>Expériences</h3>
             <ul>
                 <li>Bénévolat dans une épicerie solidaire (2019)</li><br>
@@ -77,14 +77,16 @@
                     d'une application de bureau.</li><br>
             </ul>
             <h3>Quelques projets</h3>
-            <img class="projects link" src="images/order summary.png">
-            <img class="projects link" src="images/qcm informatique.png">
+            <div class="divProjects">
+                <img class="projects link" src="images/order summary.png">
+                <img class="projects link" src="images/qcm informatique.png">
+            </div>
         </div>
     </section>
     <hr>
     <!----------------------------------------- SECTION COMPETENCES----------------------------------------->
     <section class="flex3">
-        <div>
+        <div id="info">
             <h3>Langages informatiques</h3>
             <div class="tryFlex">
                 <ul class="listCode">
@@ -109,7 +111,7 @@
                 </ul>
             </div>
         </div>
-        <div class="listQualités">
+        <div class="listQualités" id="qualities">
             <h3>Qualités</h3>
             <ul>
                 <li>Capacité d'adaptation</li>
@@ -120,12 +122,12 @@
         </div>
     </section>
     <!----------------------------------------- SECTION FORMULAIRE----------------------------------------->
-    <section>
+    <section id="contact">
         <h3>Me contacter</h3>
         <form>
             <input type="text" name="prenom" placeholder="Votre prénom">
             <input type="text" name="nom" placeholder="Votre nom">
-            <input type="main" name="mail" placeholder="Votre email">
+            <input type="main" name="mail" placeholder="Votre adresse mail">
             <textarea name="message">Notre histoire commence ici</textarea>
             <div class="wrapper">
                 <button type="submit" class="submitBtn">Envoyer</button>
@@ -136,8 +138,8 @@
     <!----------------------------------------- FOOTER----------------------------------------->
     <footer>
         <div class="flex-center">
-            <img src="images/github.png">
-            <img src="images/linkedin.png">
+            <a href="#" title="Lien vers mon compte GitHub"><img src="images/github.png"></a>
+            <a href="#" title="Lien vers mon compte LinkedIn"><img src="images/linkedin.png"></a>
         </div>
         <p class="textCopyright">© Copyright Ulysse Valdenaire, Tous droits réservés
         </p>
