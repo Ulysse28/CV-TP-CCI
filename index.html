@@ -14,13 +14,17 @@
     </header>
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <ul id="menu-topo">
-        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">Profil</a></li>
         <li class="hide">•</li>
-        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Formations</a></li>
         <li class="hide">•</li>
-        <li class="nav-item"><a href="#">Partners</a></li>
+        <li class="nav-item"><a href="#">Expériences</a></li>
         <li class="hide">•</li>
-        <li class="nav-item"><a href="#">Store</a></li>
+        <li class="nav-item"><a href="#">Compétences informatiques</a></li>
+        <li class="hide">•</li>
+        <li class="nav-item"><a href="#">Qualités</a></li>
+        <li class="hide">•</li>
+        <li class="nav-item"><a href="#">Contact</a></li>
     </ul>
 
     <div class="title">   <h1 class="name" id="profil">Ulysse Valdenaire</h1>
@@ -36,24 +40,25 @@
         <p>Je vous invite à consulter mon portofolio ou mon compte LinkedIn et mon compte GitHub pour rendre compte de
             mes compétences.</p>
         <div class="flex logo">
-            <img src="images/github.png">
-            <a href="#">Mon portofolio</a>
-            <img src="images/linkedin.png">
+            <img class="link" src="images/github.png" title="Lien vers mon compte GitHub">
+            <a href="#" class="link" title="Lien vers mon portofolio">Mon portofolio</a>
+            <img class="link" src="images/linkedin.png" title="ien vers mon compte LinkedIn">
         </div>
     </section>
     <hr>
     <section class="flex2">
         <div class="bloc" id="formations">
             <h3>Formations</h3>
-            <ul>
-                <li>Formation professionnelle (Avril-Juillet 2021) :</li>
+           
+                <h4>Formation professionnelle (Avril-Juillet 2021) :</h4>
                 <ul>
                     <li>Préparation aux métiers du numérique (CCI du Cher)</li>
                 </ul>
-                <li>Certificats en ligne sur OpenClassrooms : (2021)</li>
+                <h4>Certificats en ligne sur OpenClassrooms : (2021)</h4>
                 <ul>
+                    <li>Comprendre le Web</li>
+                    <li>Gérez du code avec Git et GitHub</li>
                     <li>Apprenez à créer votre site web avec HTML5 et CSS3</li>
-                    <li>Créez des sites web responsive avec Bootstrap 4</li>
                     <li>Apprenez à programmer avec JavaScript</li>
                     <li>Ecrivez du JavaScript pour le web</li>
                     <li>Débutez avec React</li>
@@ -61,7 +66,7 @@
                     <li>Adoptez une architecture MVC en PHP</li>
                 </ul>
                 
-            </ul>
+            
         </div>
         <div class="bloc" id="experience">
             <h3>Expériences</h3>
@@ -71,22 +76,41 @@
                     Mise en pratique des mises en page CSS. Découverte du framework Cordova et début du développement
                     d'une application de bureau.</li><br>
             </ul>
+
+            <h3>Quelques projets</h3>
+
+            <img class="projects link" src="images/order summary.png" >
+            <img class="projects link" src="images/qcm informatique.png" >
         </div>
     </section>
     <hr>
     <section class="flex3">
         <div>
             <h3>Langages informatiques</h3>
+
+           <div class="tryFlex">
             <ul>
-                <li>HTML/CSS (intermédiaire) </li>
-                <li>JavaScript (intermédiaire)</li>
-                <li>Python (intermédiaire)</li>
-                <li>PHP (débutant)</li>
+                <li>HTML/CSS 
+                     </li>
+                <li>JavaScript   </li>
+                
+                <li>Python   </li>
+                <li>PHP   </li>
             </ul>
+
+          <ul class="listProgress">
+              <li> <div class="progress-bar blue"></div></li>
+              <li> <div class="progress-bar blue"></div></li>
+              <li> <div class="progress-bar blue"></div></li>
+              <li> <div class="progress-bar blue"></div></li>
+          </ul>
+
         </div>
-        <div>
+        
+        </div>
+        <div class="listQualités">
             <h3>Qualités</h3>
-            <ul>
+            <ul >
                 <li>Capacité d'adaptation</li>
                 <li>Autonomie</li>
                 <li>Perséverance</li>
@@ -95,6 +119,8 @@
         </div>
     </section>
     <section>
+
+        <h3>Me contacter</h3>
         <form>
             <input type="text" name="prenom" placeholder="Votre prénom">
             <input type="text" name="nom" placeholder="Votre nom">
