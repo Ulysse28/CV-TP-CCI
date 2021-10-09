@@ -5,10 +5,10 @@ body {
   background-color: #f3e8e5;
   font-family: "Lato", sans-serif;
   font-size: 1em;
-  color: #846d63;
+  color: #636884;
   height: 200vh;
 }
-
+color: #846d63;
 a {
   text-decoration: none;
   color: white;
@@ -22,7 +22,8 @@ ul#menu-topo {
   text-align: center;
   text-transform: uppercase;
   position: fixed;
-  background-color: #c48254;
+  
+  background: #016ABC;
   width: 100%;
   top: 0;
 }
@@ -71,7 +72,7 @@ ul#menu-topo li a {
     box-sizing: border-box;
     width: 100%;
     padding: 12px;
-    background-color: #c48254;
+    background: rgb(43, 43, 141);
     table-layout: fixed;
     top: 0;
   }
@@ -81,7 +82,7 @@ ul#menu-topo li a {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #c48254;
+    background: rgb(43, 43, 141);
     table-layout: fixed;
     transition: all 0.3s ease-in;
     position: static;
@@ -104,7 +105,7 @@ ul#menu-topo li a {
 
   #menu-topo li:hover {
     border-bottom: 1px solid #c77336;
-    background-color: #c76926;
+    background: #B9DFFF;
   }
 
   /****TOGGLE****/
@@ -131,7 +132,7 @@ ul#menu-topo li a {
 
 .link {
   font-size: 25px;
-  color: #846d63;
+  color: #636884;
   cursor: pointer;
   /* transition-property: transform; */
   transition-duration: 1000ms;
@@ -151,8 +152,8 @@ progress {
 
 .progress-bar {
   width: 100px;
-  height: 15px;
-  background-color: #805130;
+  height: 18px;
+  background: #016ABC;
   border-radius: 16px;
   display: block;
   margin-left: 30px;
@@ -163,12 +164,12 @@ progress {
   display: block;
   position: absolute;
   width: 50px;
-  height: 15px;
+  height: 18px;
   border-radius: 12px;
 }
 
 .blue:before {
-  background-color: #c76926;
+  background: #B9DFFF;
 }
 
 .tryFlex {
@@ -178,11 +179,16 @@ progress {
 .listProgress {
   padding-left: 0;
   margin-right: 10px;
+  margin-top:0;
+  margin-bottom:0;
+
 }
 
 .listProgress li {
+  /* margin-top:25px; */
   margin-bottom: 25px;
   margin-right: 15px;
+  height:35px;
 }
 
 .flex {
@@ -258,7 +264,26 @@ input,
 textarea {
   display: block;
   width: 70%;
-  margin: 10px auto;
+  margin: 20px auto;
+  padding:10px;
+  border:none;
+  border-radius: 25px;
+  font-family: "Lato", sans-serif;
+}
+
+input{
+  height:30px;
+}
+
+input:focus {
+  border: none;
+}
+
+
+
+textarea{
+  height:100px;
+  resize: none;
 }
 
 button {
@@ -281,13 +306,52 @@ button {
 }
 
 footer {
-  background: rgb(43, 43, 141);
+ 
+  background: #016ABC;
   color: white;
 }
 
 .textCopyright {
   text-align: center;
   margin: 0;
+}
+
+
+.listCode{
+
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.listCode li{
+ 
+  background-repeat: no-repeat;
+ background-position: 0% 0%;
+  height:35px;
+  padding-left:40px;
+
+}
+
+.elementPhp{
+  background-image: url('images/php.png');
+}
+
+
+.elementPython{
+  background-image: url('images/python.png');
+}
+
+.elementJS{
+  background-image: url('images/js.png');
+ 
+
+}
+
+.elementHTML{
+  background-image: url('images/html.png');
 }
 
 @media screen and (max-width: 900px) {
@@ -309,6 +373,17 @@ footer {
     width: 70%;
     margin: auto;
   }
+
+  .listProgress li {
+    margin-top:25px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    height:35px;
+  }
+
+  input, textarea{
+    width: 90%;
+  }
 }
 
 h1,
@@ -318,4 +393,47 @@ h2 {
 
 li {
   margin-bottom: 20px;
+}
+
+.submitBtn{
+  background: #B9DFFF;
+
+color: #fff;
+
+border: 1px solid #eee;
+
+border-radius: 20px;
+
+box-shadow: 5px 5px 5px #eee;
+
+text-shadow:none;
+height:40px;
+width:100px;
+}
+
+.submitBtn:hover{
+ 
+
+  background: #016ABC;
+    
+    color: #fff;
+    
+    border: 1px solid #eee;
+    
+    border-radius: 20px;
+    
+    box-shadow: 5px 5px 5px #eee;
+    
+    text-shadow:none;
+}
+
+
+.resetBtn{
+
+ 
+
+}
+
+.resetBtn:hover{
+  background-color: red;
 }
