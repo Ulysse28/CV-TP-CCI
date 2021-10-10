@@ -59,6 +59,7 @@ ul#menu-topo li {
   padding: 10px;
   border-radius: 10px;
 }
+
 ul#menu-topo li a {
   display: inline-block;
   margin-right: 10px;
@@ -217,9 +218,24 @@ progress {
   content: "";
   display: block;
   position: absolute;
-  width: 50px;
   height: 18px;
   border-radius: 12px;
+}
+
+.css:before{
+  width:70px;
+}
+
+.js:before{
+  width:60px;
+}
+
+.py:before{
+  width:55px;
+}
+
+.php:before{
+  width:35px;
 }
 
 .blue:before {
@@ -321,6 +337,7 @@ footer {
 @media screen and (max-width: 900px) {
   body {
     margin: 0;
+    width:100%;
   }
 
   .nav-menu {
